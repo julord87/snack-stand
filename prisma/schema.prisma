@@ -12,4 +12,14 @@ model Category {
   id  Int @id   @default(autoincrement())
   name  String
   slug  String
+  products  Product[]
+}
+
+model Product {
+  id  Int @id   @default(autoincrement())
+  name  String
+  price Float
+  image String
+  categoryId  Int
+  category Category @relation(fields: [categoryId], references: [id])
 }
