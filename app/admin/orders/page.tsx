@@ -22,7 +22,7 @@ export default function OrdersPage() {
       <Heading>Administrar Ordenes</Heading>
 
       {data.length ? (
-        <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-5'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-5 poetsen'>
           {data.map((order) => (
             <OrderCard key={order.id} order={order} />
           ))}

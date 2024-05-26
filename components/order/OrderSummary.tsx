@@ -41,7 +41,7 @@ export default function OrderSummary() {
 
   return (
     <aside className="lg:h-screen lg:overflow-y-scroll md:w-64 lg:w-96 p-5">
-        <h1 className="text-4xl text-center font-black">Mi pedido</h1>
+        <h1 className="text-4xl text-center font-black poetsen mb-10">Mi pedido</h1>
 
         {order.length === 0 ? (
           <p className="text-xl my-10 text-center">
@@ -56,7 +56,7 @@ export default function OrderSummary() {
               />
             ))}
 
-            <p className="text-2xl mt-20 text-center">
+            <p className="text-2xl mt-20 text-center poetsen">
               Total a pagar: {''}
               <span className="font-bold"> {formatCurrency(total)} </span>
             </p>
@@ -75,7 +75,7 @@ export default function OrderSummary() {
 
               <input 
                 type="submit" 
-                className="py-2 rounded uppercase text-white font-bold bg-black w-full text-center cursor-pointer"
+                className="py-2 uppercase text-white font-bold bg-black w-full text-center cursor-pointer poetsen rounded-lg"
                 value={"Confirmar pedido"}
               />
 

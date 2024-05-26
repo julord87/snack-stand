@@ -10,13 +10,12 @@ const adminNavigation = [
 export default function AdminSidebar() {
   return (
     <>
-      <Logo />
+      <div className="flex justify-center mb-10">
+        <Logo />
+      </div>
 
       <div className="space-y-3 ">
-        <p className="mt-10 uppercase font-bold text-sm text-gray-600 text-center">
-          Navegación
-        </p>
-        <nav className="flex flex-col">
+        <nav className="flex flex-col poetsen">
 
             {adminNavigation.map(link => (
                 <AdminRoute 

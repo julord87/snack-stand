@@ -8,8 +8,8 @@ type LatestsOrderItemProps = {
 export default function LatestsOrderItem({order} : LatestsOrderItemProps) {
   return (
     <div className='bg-white shadow p-5 space-y-5 rounded-lg'>
-        <p className='text-2xl font-bold text-slate-600'>
-            Cliente: {order.name}
+        <p className='text-3xl font-bold text-slate-600 poetsen'>
+            {order.name}
         </p>
 
         <ul 

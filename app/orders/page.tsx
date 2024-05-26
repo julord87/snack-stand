@@ -16,7 +16,7 @@ export default function page() {
 
     if(data) return (
     <>
-        <h1 className=" text-center mt-20 text-6xl font-black">Ordenes Listas</h1>
+        <h1 className="poetsen text-center mt-20 text-6xl font-black">Ordenes Listas</h1>
         <div className="flex justify-center">
             <Logo />
         </div>
@@ -27,7 +27,7 @@ export default function page() {
                     <LatestsOrderItem key={order.id} order={order}/>
                 ))}
             </div>
-        ) : <p className="text-center">No hay ordenes pendientes</p>}
+        ) : <p className="text-center poetsen">No hay ordenes pendientes</p>}
     </>
   )
 }

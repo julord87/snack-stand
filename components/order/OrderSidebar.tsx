@@ -13,7 +13,10 @@ export default async function OrderSidebar() {
   return (
     <aside className="md:w-72 md:h-screen bg-white">
 
-        <Logo />
+        <div className="flex justify-center">
+          <Logo />
+        </div>
+
 
         <nav className="mt-10">
           {categories.map((category) => (
