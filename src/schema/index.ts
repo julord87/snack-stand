@@ -1,8 +1,10 @@
 import { z } from "zod";
 
 export const OrderSchema = z.object({
-    name: z.string().min(1, { message: "No olvides darnos tu nombre!" }),
-    total: z.number().min(0.01, { message: "Hay algún error en la orden" }),
+    name: z.string()
+        .min(1, { message: "No olvides darnos tu nombre!" }),
+    total: z.number()
+        .min(0.01, { message: "Hay algún error en la orden" }),
     order: z.array(z.object({
         id: z.number(),
         name: z.string(),
