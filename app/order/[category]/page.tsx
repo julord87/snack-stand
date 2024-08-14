@@ -3,7 +3,7 @@ import Heading from "@/components/ui/Heading"
 import { prisma } from "@/src/lib/prisma"
 import { Product } from "@prisma/client"
 
-async function getProducts(category: string) {
+async function getProducts(category: string):Promise<Product[]> {
   const products = await prisma.product.findMany({
     where: {
       category: {
