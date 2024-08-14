@@ -15,7 +15,7 @@ async function getProducts(category: string):Promise<Product[]> {
 }
 
 export default async function OrderPage({params} : {params: {category : string}}) {
-  const products = await getProducts(params.category)
+  const products : Product[] = await getProducts(params.category)
   return (
     <>
       <Heading>
