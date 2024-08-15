@@ -3,6 +3,7 @@ import Heading from "@/components/ui/Heading";
 import { prisma } from "@/src/lib/prisma";
 import { Product } from "@prisma/client"; // Esto asume que tienes una importación válida de PrismaClient
 
+
 async function getProducts(category: string) {
   const products: Product[] = await prisma.product.findMany({
     where: {
@@ -11,7 +12,7 @@ async function getProducts(category: string) {
       },
     },
   });
-  return products;
+  return products
 }
 
 export default async function OrderPage({
