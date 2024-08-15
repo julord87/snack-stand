@@ -28,4 +28,4 @@ export default async function OrderPage({params} : {params: {category : string}}
       </div>
     </>
   )
-}
+};
